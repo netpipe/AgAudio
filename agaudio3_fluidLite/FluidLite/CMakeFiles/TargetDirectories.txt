@@ -1,0 +1,8 @@
+/home/netpipe/Desktop/FluidLite/CMakeFiles/install/strip.dir
+/home/netpipe/Desktop/FluidLite/CMakeFiles/install/local.dir
+/home/netpipe/Desktop/FluidLite/CMakeFiles/edit_cache.dir
+/home/netpipe/Desktop/FluidLite/CMakeFiles/install.dir
+/home/netpipe/Desktop/FluidLite/CMakeFiles/list_install_components.dir
+/home/netpipe/Desktop/FluidLite/CMakeFiles/rebuild_cache.dir
+/home/netpipe/Desktop/FluidLite/CMakeFiles/fluidlite.dir
+/home/netpipe/Desktop/FluidLite/CMakeFiles/fluidlite-static.dir

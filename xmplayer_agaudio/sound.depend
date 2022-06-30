@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1656233029 source:/home/netpipe/Downloads/libxm-master/xmplayer_agaudio/AgAudio3/CAudio.cpp
+	"CAudio.h"
+
+1656556290 /home/netpipe/Downloads/libxm-master/xmplayer_agaudio/AgAudio3/CAudio.h
+	<string>
+	<map>
+	<vector>
+	<AL/al.h>
+	<AL/alc.h>
+	<AL/efx.h>
+	<SDL/SDL_sound.h>
+	"CVorbisFile.h"
+	"IReferenceCounted.h"
+
+1656556282 /home/netpipe/Downloads/libxm-master/xmplayer_agaudio/AgAudio3/CVorbisFile.h
+	<OpenAL/al.h>
+	<AL/al.h>
+	<ogg/ogg.h>
+	<vorbis/codec.h>
+	<vorbis/vorbisfile.h>
+	<iostream>
+	<cstring>
+
+1645453708 /home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/include/IReferenceCounted.h
+	"irrTypes.h"
+
+1645453708 /home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/include/irrTypes.h
+	"IrrCompileConfig.h"
+	<wchar.h>
+	<crtdbg.h>
+	"assert.h"
+	<stdlib.h>
+	<crtdbg.h>
+
+1645453708 /home/netpipe/Dev/LunaLibs/irrlicht-1.8.4/include/IrrCompileConfig.h
+	<stdio.h>
+	<xtl.h>
+	<tchar.h>
+

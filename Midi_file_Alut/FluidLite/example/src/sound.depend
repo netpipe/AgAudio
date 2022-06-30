@@ -1,0 +1,119 @@
+# depslib dependency file v1.0
+1655485673 source:/home/netpipe/Desktop/untitled folder 2/FluidLite/example/src/OpenalDemo.cpp
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<AL/al.h>
+	<AL/alc.h>
+	<memory.h>
+	<string.h>
+	<cstring>
+	<type_traits>
+	<fluidlite.h>
+	<stdio.h>
+	<stdlib.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<assert.h>
+	<stdint.h>
+	<unistd.h>
+	<math.h>
+	<type_traits>
+	<new>
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidlite.h
+	<stdio.h>
+	"fluidsynth/types.h"
+	"fluidsynth/settings.h"
+	"fluidsynth/synth.h"
+	"fluidsynth/sfont.h"
+	"fluidsynth/ramsfont.h"
+	"fluidsynth/log.h"
+	"fluidsynth/misc.h"
+	"fluidsynth/mod.h"
+	"fluidsynth/gen.h"
+	"fluidsynth/voice.h"
+	"fluidsynth/version.h"
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/types.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/settings.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/synth.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/sfont.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/ramsfont.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/log.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/misc.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/mod.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/gen.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/voice.h
+
+1655442174 /home/netpipe/Desktop/untitled folder 2/FluidLite/include/fluidsynth/version.h
+
+1655485673 source:/home/netpipe/Desktop/2/FluidLite/example/src/OpenalDemo.cpp
+	<stdlib.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<AL/al.h>
+	<AL/alc.h>
+	<memory.h>
+	<string.h>
+	<cstring>
+	<type_traits>
+	<fluidlite.h>
+	<stdio.h>
+	<stdlib.h>
+	<AL/al.h>
+	<AL/alc.h>
+	<assert.h>
+	<stdint.h>
+	<unistd.h>
+	<math.h>
+	<type_traits>
+	<new>
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidlite.h
+	<stdio.h>
+	"fluidsynth/types.h"
+	"fluidsynth/settings.h"
+	"fluidsynth/synth.h"
+	"fluidsynth/sfont.h"
+	"fluidsynth/ramsfont.h"
+	"fluidsynth/log.h"
+	"fluidsynth/misc.h"
+	"fluidsynth/mod.h"
+	"fluidsynth/gen.h"
+	"fluidsynth/voice.h"
+	"fluidsynth/version.h"
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/types.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/settings.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/synth.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/sfont.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/ramsfont.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/log.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/misc.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/mod.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/gen.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/voice.h
+
+1655442174 /home/netpipe/Desktop/2/FluidLite/include/fluidsynth/version.h
+
