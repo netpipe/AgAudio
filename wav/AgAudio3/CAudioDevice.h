@@ -1,8 +1,8 @@
 #pragma once
 
-#include <irrlicht-1.8.5/irrlicht.h>
-#include <OpenAL1.1/al.h>
-#include <OpenAL1.1/alc.h>
+#include <irrlicht.h>
+#include <AL/al.h>
+#include <AL/alc.h>
 #include "CAudioSource.h"
 
 using namespace irr;

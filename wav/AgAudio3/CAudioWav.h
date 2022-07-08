@@ -1,12 +1,12 @@
 #pragma once
 
-#include <irrlicht-1.8.5/irrlicht.h>
+#include <irrlicht.h>
 
-#include <OpenAL1.1/al.h>
+#include <AL/al.h>
 
-#include <libogg-1.3.5/ogg.h>
-#include <libvorbis-1.3.7/codec.h>
-#include <libvorbis-1.3.7/vorbisfile.h>
+#include <ogg/ogg.h>
+#include <vorbis/codec.h>
+#include <vorbis/vorbisfile.h>
 
 #include "CAudioData.h"
 
@@ -57,7 +57,7 @@ namespace agEngine
             bool hasFinished() const;
         private:
             FILE* file;
-            SWavFile wavData;           
+            SWavFile wavData;
 
             ALenum format;
 

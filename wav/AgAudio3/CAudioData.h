@@ -1,6 +1,6 @@
 #pragma once
 
-#include <irrlicht-1.8.5/irrlicht.h>
+#include <irrlicht.h>
 
 #include "CAudioSource.h"
 

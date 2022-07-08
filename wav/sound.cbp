@@ -47,7 +47,7 @@
 			<Add option="-g" />
 			<Add option="-DAgAudio2" />
 			<Add directory="../../include" />
-			<Add directory="NoIrrlicht" />
+			<Add directory="FluidLite/include" />
 		</Compiler>
 		<Linker>
 			<Add library="Irrlicht" />
@@ -55,11 +55,22 @@
 			<Add library="ogg" />
 			<Add library="vorbis" />
 			<Add library="vorbisfile" />
+			<Add directory="FluidLite" />
 		</Linker>
-		<Unit filename="CAudio.cpp" />
-		<Unit filename="CAudio.h" />
-		<Unit filename="CVorbisFile.cpp" />
-		<Unit filename="CVorbisFile.h" />
+		<Unit filename="AgAudio3/CAudio.cpp" />
+		<Unit filename="AgAudio3/CAudio.h" />
+		<Unit filename="AgAudio3/CAudioData.h" />
+		<Unit filename="AgAudio3/CAudioDevice.cpp" />
+		<Unit filename="AgAudio3/CAudioDevice.h" />
+		<Unit filename="AgAudio3/CAudioEffect.h" />
+		<Unit filename="AgAudio3/CAudioOgg.cpp" />
+		<Unit filename="AgAudio3/CAudioOgg.h" />
+		<Unit filename="AgAudio3/CAudioSource.cpp" />
+		<Unit filename="AgAudio3/CAudioSource.h" />
+		<Unit filename="AgAudio3/CAudioStream.cpp" />
+		<Unit filename="AgAudio3/CAudioStream.h" />
+		<Unit filename="AgAudio3/CVorbisFile.cpp" />
+		<Unit filename="AgAudio3/CVorbisFile.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

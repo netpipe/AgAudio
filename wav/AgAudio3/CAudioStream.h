@@ -1,7 +1,7 @@
 #pragma once
 
-#include <irrlicht-1.8.5/irrlicht.h>
-#include <OpenAL1.1/al.h>
+#include <irrlicht.h>
+#include <AL/al.h>
 
 #include "CAudioSource.h"
 #include "CAudioData.h"
