@@ -1,5 +1,3 @@
-#include "../../config.h"
-#ifdef AGAUDIO3
 #include "CAudio.h"
 
 namespace agEngine
@@ -453,14 +451,16 @@ namespace agEngine
         SoundData::SoundData(const std::string &filename, const bool &loadToMemory = false)
         {
             std::string extension = filename.substr ( filename.rfind(".") + 1);
+            #ifdef OGG
             if ( extension == "ogg" )
             {
                 ogg = new OggFile();
                 ogg->open(filename, loadToMemory);
                 typeLoaded = FT_OGG;
             }
+            #endif
 #ifdef WITHSDL
-            else if ( extension == "mp3" )
+             if ( extension == "mp3" )
             {
                 if (enableMp3Playback)
                 {
@@ -882,4 +882,4 @@ namespace agEngine
         }
     }
 }
-#endif
+

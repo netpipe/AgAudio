@@ -1,7 +1,5 @@
 #ifndef AUDIO_H
 #define AUDIO_H
-#include "../../config.h"
-#ifdef AGAUDIO3
 #include <string>
 #include <map>
 #include <vector>
@@ -17,6 +15,8 @@
 #include "CVorbisFile.h"
 
 #include "IReferenceCounted.h"
+
+#define OGG
 
 namespace agEngine
 {
@@ -375,5 +375,4 @@ namespace agEngine
     }
 }
 
-#endif
 #endif
