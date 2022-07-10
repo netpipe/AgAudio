@@ -39,12 +39,14 @@ namespace agEngine
             fread(&wavData.BlockAlign, 2, 1, file);
             fread(&wavData.BitsPerSample, 2, 1, file);
 
+        //    wavData.SampleRate=11025;
+
             for (int i = 0; i < 16; i += 4)
             {
                 char tmp[5];
                 fread(tmp, 1, 4, file);
                 tmp[4] = 0;
-                if(!_stricmp(tmp, "data"))
+                if(!stricmp(tmp, "data"))
                     break;
             }
 
@@ -83,13 +85,13 @@ namespace agEngine
         u32 CAudioWav::getSampleCount()
         {
             u32 sample_count = wavData.Subchunk2Size / wavData.NumChannels / (wavData.BitsPerSample / 8);
-            return sample_count;       
+            return sample_count;
         }
 
         u32 CAudioWav::getPosition()
         {
             u32 pos = wavData.dataRead;
-            return pos;    
+            return pos;
         }
 
         void CAudioWav::setPosition(u32 pos)
@@ -124,7 +126,7 @@ namespace agEngine
             memcpy(buffer, wavData.dataPtr + wavData.dataRead, size);
 
             wavData.dataRead += size;
-           
+
             return size;
         }
 
@@ -147,26 +149,26 @@ namespace agEngine
             setPosition(source->getStreamPosition());
 
             result = read(sBuffer, (sBufferSize * 16), 0, 2, 1, &section);
-           
+
             source->setStreamPosition(getPosition());
 
             if (result == 0)
                 finished = true;
 
             bufferthis(&bufferId, sBuffer, result);
-   
+
             return true;
         }
 
         bool CAudioWav::readMemorySamples(CAudioSource* source, ALuint bufferId, char* lpBuffer, long nBytes)
-        {          
+        {
             u32 size = 0;
 
             finished = false;
 
             u32 sBufferSize = source->getBufferSize();
-            c8* sBuffer = source->getBuffer();           
-     
+            c8* sBuffer = source->getBuffer();
+
             bufferthis(&bufferId, lpBuffer, nBytes);
 
             if (alGetError() != AL_NO_ERROR)
