@@ -32,6 +32,7 @@ namespace agEngine
                 effectsEnabled = (alcIsExtensionPresent(soundDevice, "ALC_EXT_EFX") == AL_TRUE);
                 if (effectsEnabled)
                 {
+                    printf("effects enabled");
                     ALint attribs[4];
                     attribs[0] = ALC_MAX_AUXILIARY_SENDS;
                     attribs[1] = 4;
@@ -81,6 +82,7 @@ namespace agEngine
                     if (!alExt.alGenEffects || !alExt.alDeleteEffects || !alExt.alIsEffect)
                     {
                         effectsEnabled = false;
+                         printf("effects false");
                     }
                     else
                     {
@@ -426,7 +428,8 @@ namespace agEngine
         {
             alSource3i(sourceId, AL_AUXILIARY_SEND_FILTER, device->effectSlot[slotNumber], 0, 0);
 
-            //if (alGetError() != AL_NO_ERROR)
+            if (alGetError() != AL_NO_ERROR)
+            printf("Could not set the pass through");
             //    *device->output << "Could not set the pass through" << "\n";
         }
 
@@ -831,9 +834,11 @@ namespace agEngine
             }
 
             device->alExt.alAuxiliaryEffectSloti(auxSlot, AL_EFFECTSLOT_EFFECT, effect);
-
-            //if (alGetError() != AL_NO_ERROR)
-            //    *device->output << "Problem loading the effect" << "\n";
+   printf("teste" );
+            if (alGetError() != AL_NO_ERROR){
+        //        *device->output << "Problem loading the effect" << "\n";
+         printf("Problem loading the effect" );
+            }
         }
 
         // Instantiates a new audio device

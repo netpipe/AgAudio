@@ -14,11 +14,12 @@ int main ( int argc, char** argv )
 
  agEngine::Audio::AudioEffect * aeffect = new  agEngine::Audio::AudioEffect(EFFECT_REVERB);
  adevice->setEffect(1,EFFECT_REVERB,aeffect);
-
+// aeffect->setReverbType(REVERB_PLATE);
+test->passThroughEffectSlot(1);
  adevice->attachAudioSource( test);
 
  test->play();
-
+    printf("audio test\n");
 	while (true)
 	{
 		if (!test->isPlaying())
