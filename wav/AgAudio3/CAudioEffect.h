@@ -1,5 +1,11 @@
 #pragma once
+#include <string>
+#include <map>
+#include <vector>
 
+#include <AL/al.h>
+#include <AL/alc.h>
+#include <AL/efx.h>
 #include <irrlicht.h>
 
 using namespace irr;
@@ -82,109 +88,108 @@ namespace agEngine
 
         } EFX_EXTENSION_STRUCT;
 
-        class CAudioEffect : public virtual IReferenceCounted
+        class AudioEffect
         {
         public:
-            CAudioEffect(audioEffect effectType);
-            virtual ~CAudioEffect();
-
-            virtual void setSlots(u32 auxSlot, effectSlot);
-            virtual void activate(u32 auxSlot, u32 effectSlot);
-            virtual void setReverbType(reverbType reverb);
+            AudioEffect(const audioEffects &effectType);
+           void setReverbType(const reverbType &reverb);
         protected:
+            ~AudioEffect();
+        private:
+            void activate(const unsigned int &auxSlot, const unsigned int &effectSlot);
             audioEffects effectType;
-            ALuint effectSlot;
+            ALuint effect;
             ALuint auxSlot;
-
+        private:
             // These are all the variables used to set the different effects
 
             // Reverb
-            f32 reverbDensity;
-            f32 reverbDiffusion;
-            f32 reverbGain;
-            f32 reverbGainHf;
-            f32 reverbDecayTime;
-            f32 reverbDecayHfRatio;
-            f32 reverbReflectionsGain;
-            f32 reverbReflectionsDelay;
-            f32 reverbLateReverbGain;
-            f32 reverbLateReverbDelay;
-            f32 reverbAirAbsorptionGainHf;
-            f32 reverbRoomRolloffFactor;
-            s32 reverbDecayHfLimit;
+            float reverbDensity;
+            float reverbDiffusion;
+            float reverbGain;
+            float reverbGainHf;
+            float reverbDecayTime;
+            float reverbDecayHfRatio;
+            float reverbReflectionsGain;
+            float reverbReflectionsDelay;
+            float reverbLateReverbGain;
+            float reverbLateReverbDelay;
+            float reverbAirAbsorptionGainHf;
+            float reverbRoomRolloffFactor;
+            int reverbDecayHfLimit;
 
             // Chorus
-            s32 chorusWaveform;
-            s32 chorusPhase;
-            f32 chorusRate;
-            f32 chorusDepth;
-            f32 chorusFeedback;
-            f32 chorusDelay;
+            int chorusWaveform;
+            int chorusPhase;
+            float chorusRate;
+            float chorusDepth;
+            float chorusFeedback;
+            float chorusDelay;
 
             // Distortion
-            f32 distortionEdge;
-            f32 distortionGain;
-            f32 distortionLowpassCutoff;
-            f32 distortionEQCenter;
-            f32 distortionEQBandwidth;
+            float distortionEdge;
+            float distortionGain;
+            float distortionLowpassCutoff;
+            float distortionEQCenter;
+            float distortionEQBandwidth;
 
             // Echo
-            f32 echoDelay;
-            f32 echoLRDelay;
-            f32 echoDamping;
-            f32 echoFeedback;
-            f32 echoSpread;
+            float echoDelay;
+            float echoLRDelay;
+            float echoDamping;
+            float echoFeedback;
+            float echoSpread;
 
             // Flanger
-            s32 flangerWaveform;
-            s32 flangerPhase;
-            f32 flangerRate;
-            f32 flangerDepth;
-            f32 flangerFeedback;
-            f32 flangerDelay;
+            int flangerWaveform;
+            int flangerPhase;
+            float flangerRate;
+            float flangerDepth;
+            float flangerFeedback;
+            float flangerDelay;
 
             // Frequency Shifter
-            f32 shifterFrequency;
-            u32 shifterLeftDirection;
-            u32 shifterRightDirection;
+            float shifterFrequency;
+            unsigned int shifterLeftDirection;
+            unsigned int shifterRightDirection;
 
             // Vocal Morpher
-            u32 morpherPhonemeA;
-            u32 morpherPhonemeB;
-            s32 morpherPhonemeACoarseTuning;
-            s32 morpherPhonemeBCoarseTuning;
-            u32 morpherWaveform;
-            f32 morpherRate;
+            unsigned int morpherPhonemeA;
+            unsigned int morpherPhonemeB;
+            int morpherPhonemeACoarseTuning;
+            int morpherPhonemeBCoarseTuning;
+            unsigned int morpherWaveform;
+            float morpherRate;
 
             // Pitch Shifter
-            s32 shifterCoarseTune;
-            s32 shifterFineTune;
+            int shifterCoarseTune;
+            int shifterFineTune;
 
             // Ring Modulator
-            f32 ringModulatorFrequency;
-            f32 ringModulatorHighpassCutoff;
-            s32 ringModulatorWaveform;
+            float ringModulatorFrequency;
+            float ringModulatorHighpassCutoff;
+            int ringModulatorWaveform;
 
             // Autowah
-            f32 autowahAttackTime;
-            f32 autowahReleaseTime;
-            f32 autowahResonance;
-            f32 autowahPeakGain;
+            float autowahAttackTime;
+            float autowahReleaseTime;
+            float autowahResonance;
+            float autowahPeakGain;
 
             // Equalizer
-            f32 eqLowGain;
-            f32 eqLowCutoff;
-            f32 eqMid1Gain;
-            f32 eqMid1Center;
-            f32 eqMid1Width;
-            f32 eqMid2Gain;
-            f32 eqMid2Center;
-            f32 eqMid2Width;
-            f32 eqHighGain;
-            f32 eqHighCutoff;
+            float eqLowGain;
+            float eqLowCutoff;
+            float eqMid1Gain;
+            float eqMid1Center;
+            float eqMid1Width;
+            float eqMid2Gain;
+            float eqMid2Center;
+            float eqMid2Width;
+            float eqHighGain;
+            float eqHighCutoff;
 
             // Compressor
-            s32 compressorOnOff;
+            int compressorOnOff;
         };
     }
 }
